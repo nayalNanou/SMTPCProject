@@ -1,0 +1,126 @@
+:root {
+    --headerBackgroundColor: #E7E7E7;
+}
+
+div#page {
+    display: flex;
+    height: 100vh;
+}
+
+/* Layout Left Side */
+
+div.left-side {
+    width: 300px;
+    background: #DFDFDF;
+}
+
+div.left-side img.smtpc-logo {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+div.left-side nav ul {
+    list-style-type: none;
+}
+
+div.left-side nav ul.application-menu {
+    padding: 0px;
+    margin: 0px;
+}
+
+div.left-side nav ul.application-admin-menu {
+    padding: 0px;
+    margin: 0px;
+}
+
+div.left-side nav ul li a {
+    display: flex;
+    align-items: center;
+    padding: 8px 0px;
+    text-decoration: none;
+    color: black;
+}
+
+div.left-side nav ul li a:hover {
+    background: #F0F0F0;
+}
+
+div.left-side nav ul li a svg {
+    margin-right: 6px;
+}
+
+div.left-side nav ul.application-menu a {
+    padding-left: 14px;
+}
+
+/* Layout Right Side */
+
+div.right-side {
+    width: 100%;
+}
+
+header {
+    background: var(--headerBackgroundColor);
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 0px 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 0px;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+}
+
+button#button-user-menu {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    margin-left: 8px;
+    background: var(--headerBackgroundColor);
+    border-radius: 6px;
+    outline: none;
+}
+
+button#button-user-menu:hover {
+    outline: none;
+    box-shadow: 0px 0px 4px silver;
+}
+
+div#user-menu {
+    display: none;
+    position: absolute;
+    right: 0px;
+    min-width: 200px;
+    background: #F0F0F0;
+    border: 1px solid silver;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px #E7E7E7;
+}
+
+div#user-menu a:nth-child(1) {
+    border-top: none;
+}
+
+div#user-menu a {
+    display: block;
+    border-top: 1px solid silver;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 8px 14px;
+    text-decoration: none;
+    color: black;
+}
+
+div#user-menu a:hover {
+    background: #E2E2E2;
+}
+
